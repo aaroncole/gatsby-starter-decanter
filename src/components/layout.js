@@ -9,8 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import BrandBar from "../decanter/components/brandbar"
+import LockUp from "../decanter/components/lockup"
+import GlobalFooter from "../decanter/components/globalfooter"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,22 +26,23 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+        <BrandBar />
+
+        <header class="su-masthead su-masthead--right">
+          <section>
+            <LockUp siteTitle={data.site.siteMetadata.title} />
+          </section>
+        </header>
+
+        <div class="page-content">
+          <div class="content">
+              <main>{children}</main>
+          </div>
+        </div>
+        
+        <GlobalFooter />
     </>
+
   )
 }
 

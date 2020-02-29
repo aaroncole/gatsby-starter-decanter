@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+
+import "./src/styles/decanter.css"
+import "./src/styles/decanter-grid.css"
