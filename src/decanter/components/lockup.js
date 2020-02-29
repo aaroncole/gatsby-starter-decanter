@@ -1,12 +1,12 @@
 import React from "react"
 
-const LockUp = ({ siteTitle }) => (
+const LockUp = ({ siteTitle } , { schoolName }) => (
   <div class="su-lockup">
   <a href="https://decanter.stanford.edu">
     <div class="su-lockup__cell1">
       <div class="su-lockup__wordmark-wrapper">
         <span class="su-lockup__wordmark">Stanford</span>
-        <span class="su-lockup__line4">Earth</span>
+        <span class="su-lockup__line4">{ schoolName }</span>
       </div>
     </div>
     <div class="su-lockup__cell2">
