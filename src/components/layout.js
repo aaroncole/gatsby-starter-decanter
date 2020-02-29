@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
 
         <header class="su-masthead su-masthead--right">
           <section>
-            <LockUp siteTitle={data.site.siteMetadata.title} />
+            <LockUp siteTitle={data.site.siteMetadata.title} schoolName={data.site.siteMetadata.schoolName} />
           </section>
         </header>
 
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
               <main>{children}</main>
           </div>
         </div>
-        
+
         <GlobalFooter />
     </>
 
