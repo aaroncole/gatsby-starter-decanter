@@ -18,7 +18,10 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
+          title,
+          school,
+          line2,
+          line3
         }
       }
     }
@@ -30,7 +33,7 @@ const Layout = ({ children }) => {
 
         <header class="su-masthead su-masthead--right">
           <section>
-            <LockUp siteTitle={data.site.siteMetadata.title} schoolName={data.site.siteMetadata.schoolName} />
+            <LockUp school={data.site.siteMetadata.school} siteTitle={data.site.siteMetadata.title} line2={data.site.siteMetadata.line2} line3={data.site.siteMetadata.line3} />
           </section>
         </header>
 
