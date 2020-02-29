@@ -1,6 +1,6 @@
 import React from "react"
 
-const LockUp = ({ siteTitle } , { schoolName }) => (
+const LockUp = ({ siteTitle, schoolName }) => (
   <div class="su-lockup">
   <a href="https://decanter.stanford.edu">
     <div class="su-lockup__cell1">
