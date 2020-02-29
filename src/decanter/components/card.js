@@ -6,7 +6,7 @@ const Card = () => (
   <figure class="su-media  su-media--image su-card__media">
     <a rel="nofollow noopener" tabindex="-1" href="https://stanford.edu">
       <div class="su-media__wrapper su-aspect-ratio">
-        <img src="https://placeimg.com/2000/1333/any" autoplay="" loop="" muted="" alt="Example image" />
+        <img src="https://placeimg.com/2000/1333/any" autoplay="" loop="" muted="" alt="" />
       </div>
     </a>
   </figure>
